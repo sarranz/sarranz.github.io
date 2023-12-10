@@ -1,52 +1,86 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="EN">
     <head>
+        <meta charset="UTF-8">
         <title>Santiago Arranz Olmos</title>
         <style>
          body {
              background-color: black;
              color: white;
+             font-size: 16px;
+             line-height: 1.4;
          }
 
-         a:link {
-             color: yellow;
-             background-color: transparent;
+         a {
+             border-bottom-width: 1px;
+             border-bottom-style: solid;
+             color: #D9D9D9;
              text-decoration: none;
          }
 
-         a:visited {
-             color: lightgreen;
-             background-color: transparent;
-             text-decoration: none;
+         a:hover {
+             border-bottom: 0;
          }
 
-         a:active {
-             color: lightblue;
-             background-color: transparent;
-             text-decoration: underline;
+         #page-wrap {
+             width: 80%;
+             margin-top: 5%;
+             margin-right: auto;
+             margin-left: auto;
+             margin-bottom: auto;
+         }
+
+         #profile-pic {
+             float: left;
          }
         </style>
     </head>
 
     <body>
-        <div style="width: 100%; overflow: hidden;">
-            <div style="float: left;">
+        <div id="page-wrap">
+            <div id="profile-pic">
                 <img
                     src="img/profile.jpg"
-                    alt="Image"
-                    style="width:300px;height:300px;"
+                    alt="Profile picture"
+                    style="width:250px;height:250px;"
                 >
             </div>
-            <div style="margin-left: 320px;">
-                <h1>Santiago Arranz Olmos</h1>
-                <p>I'm a PhD student at <a href="https://www.mpi-sp.org/">Max Planck Institute for Security and Privacy (MPI-SP)</a>.</p>
-                <p>I'm interested in programming languages theory and its application to security.</p>
-                <p>I did my Master's at <a href="https://www.unc.edu.ar/">Universidad Nacional de Córdoba (UNC)</a>. You can download my thesis <a href="files/ms-thesis.pdf">here</a> (it's in Spanish).</p>
-                <table>
-                    <tr><td>Email:</td><td>firstname [dot] arranz-olmos [at] mpi-sp [dot] org</td></tr>
-                    <tr><td>DBLP:</td><td><a href="https://dblp.org/pid/304/6207">https://dblp.org/pid/304/6207</a></td></tr>
-                </table>
+            <div style="margin-left: 300px;">
+                <div id="information">
+                    <h1>Santiago Arranz Olmos</h1>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>santiago [dot] arranz-olmos [at] mpi-sp [dot] org</td>
+                        </tr>
+                        <tr>
+                            <td>DBLP:</td>
+                            <td><a href="https://dblp.org/pid/304/6207">https://dblp.org/pid/304/6207</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="introduction">
+                    <p>
+                        I'm a PhD student at
+                        <a href="https://www.mpi-sp.org/">
+                            Max Planck Institute
+                        for Security and Privacy (MPI-SP)</a>.
+                    </p>
+                    <p>
+                        I'm interested in programming languages theory and its
+                        application to security.
+                    </p>
+                    <p>
+                        I did my Master's at
+                        <a href="https://www.unc.edu.ar/">Universidad Nacional
+                        de Córdoba (UNC)</a>.
+                        You can download my thesis
+                        <a href="files/ms-thesis.pdf">here</a> (it's in
+                        Spanish).
+                    </p>
+                </div>
             </div>
+        </div>
     </body>
 </html>

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Jasmin tutorial</title>
+    <title>Programming Languages for Cybersecurity</title>
     <style>
         body {
              background-color: black;
@@ -40,114 +40,134 @@
 
 <body>
     <div id="page-wrap">
-        <h1>Jasmin Tutorial at RIO (2025-03-10)</h1>
-        <p>
-            The tutorial is available <a href="jasmin-tutorial.zip">here</a>. Please follow the README.md to install everything and have it ready for the course. Contact me at santiago [dot] arranz-olmos [at] mpi-sp [dot] org if you are having trouble with it.
-        </p>
-    </div>
-    <h2>Classes</h2>
-    <div>
-        <b>Monday 10th: Introduction to Formosa, Hoare Logic, Jasmin</b>
-        <p>
-            Formosa, EasyCrypt, and Jasmin; review of Hoare logic
-        </p>
-        <p>Referenced material:</p>
-        <ul>
-            <li>
-                Shai Halevi. A plausible approach to computer-aided cryptographic proofs. <a href="https://eprint.iacr.org/2005/181">https://eprint.iacr.org/2005/181</a>.
-            </li>
-            <li>
-                Johannes Wikner, Daniël Trujillo, and Kaveh Razavi. 2023. Phantom: Exploiting Decoder-detectable Mispredictions. In 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO ’23), October 28-November 1, 2023, Toronto, ON, Canada. ACM, New York, NY, USA, § 13 pages. <a href="https://doi.org/10.1145/3613424.3614275">https://doi.org/10.1145/3613424.3614275</a>.
-            </li>
-            <li>
-                Gilles Barthe, Marcel Böhme, Sunjay Cauligi, Chitchanok Chuengsatiansup, Daniel Genkin, Marco Guarnieri, David Mateos Romero, Peter Schwabe, David Wu, and Yuval Yarom. 2024. Testing Side-channel Security of Cryptographic Implementations against Future Microarchitectures. In Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security (CCS '24). Association for Computing Machinery, New York, NY, USA, 1076–1090. <a href="https://doi.org/10.1145/3658644.3670319">https://doi.org/10.1145/3658644.3670319</a>.
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <b>Tuesday 11th: Relational Hoare Logic, EasyCrypt, Jasmin tutorial</b>
-        <p>
-            Relational Hoare Logic; relational properties; example HL proof in EC; Jasmin tutorial
-        </p>
-        <p>Referenced material:</p>
-        <ul>
-            <li>
-                G. Barthe, P. R. D'Argenio, and T. Rezk, "Secure information flow by self-composition," Mathematical Structures in Computer Science, vol. 21, no. 6, pp. 1207–1252, 2011. <a href="https://doi.org/10.1017/S0960129511000193">doi:10.1017/S0960129511000193</a>.
-            </li>
-            <li>
-                N Benton. Semantics of Program Analyses and Transformations. Lecture notes for the PAT Summer School. June 2005. <a href="https://nickbenton.name/patrevised.pdf">https://nickbenton.name/patrevised.pdf</a>.
-            </li>
-            <li>
-                An introduction to relational program verification:
-                <a href="https://software.imdea.org/~gbarthe/__introrelver.pdf">https://software.imdea.org/~gbarthe/__introrelver.pdf</a>.
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <b>Wednesday 12th: Operational Semantics, Constant-Time</b>
-        <p>
-            Operational semantics; semantics with observations; constant-time
-        </p>
-        <p>Referenced material:</p>
-        <ul>
-            <li>
-                The Formal Semantics of Programming Languages by Glynn Winskel.
-                <a href="https://doi.org/10.7551/mitpress/3054.001.0001">https://doi.org/10.7551/mitpress/3054.001.0001</a>.
-            </li>
-            <li>
-                Software Foundations by Benjamin Pierce.
-                <a href="https://softwarefoundations.cis.upenn.edu/lf-current/index.html">https://softwarefoundations.cis.upenn.edu/lf-current/index.html</a>.
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <b>Thursday 13th: Compiler preservation of semantics</b>
-        <p>
-            Safety properties; functional correctness; forward and backward simulations; CT simulations; simulations with transformers
-        </p>
-        <p>Referenced material:</p>
-        <ul>
-            <li>CompCert: <a href="https://compcert.org/">compcert.org</a></li>
-            <li>CakeML: <a href="https://cakeml.org/">cakeml.org</a></li>
-            <li>
-                Leroy, X. A Formally Verified Compiler Back-end. J Autom Reasoning 43, 363–446 (2009). <a href="https://doi.org/10.1007/s10817-009-9155-4">https://doi.org/10.1007/s10817-009-9155-4</a>.
-            </li>
-            <li>
-                G. Barthe, B. Grégoire and V. Laporte, "Secure Compilation of Side-Channel Countermeasures: The Case of Cryptographic “Constant-Time”," 2018 IEEE 31st Computer Security Foundations Symposium (CSF), Oxford, UK, 2018, pp. 328-343, <a href="https://doi.org/10.1109/CSF.2018.00031">doi:10.1109/CSF.2018.00031</a>.
-            </li>
-            <li>
-                Santiago Arranz Olmos, Gilles Barthe, Lionel Blatter, Benjamin Grégoire, and Vincent Laporte. 2025. Preservation of Speculative Constant-Time by Compilation. Proc. ACM Program. Lang. 9, POPL, Article 44 (January 2025), 33 pages. <a href="https://doi.org/10.1145/3704880">https://doi.org/10.1145/3704880</a>.
-            </li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <b>Extra resources</b>
-        <p>Side-channel attacks:</p>
-        <ul>
-            <li>
-                Yuval Yarom and Katrina Falkner. 2014. FLUSH+RELOAD: a high resolution, low noise, L3 cache side-channel attack. In Proceedings of the 23rd USENIX conference on Security Symposium (SEC'14). USENIX Association, USA, 719–732. <a href="https://eprint.iacr.org/2013/448">eprint.iacr.org/2013/448</a>.
-            </li>
-            <li>
-                Dag Arne Osvik, Adi Shamir, and Eran Tromer. 2006. Cache attacks and countermeasures: the case of AES. In Proceedings of the 2006 The Cryptographers' Track at the RSA conference on Topics in Cryptology (CT-RSA'06). Springer-Verlag, Berlin, Heidelberg, 1–20. <a href="https://doi.org/10.1007/11605805_1">doi.org/10.1007/11605805_1</a>.
-            </li>
-            <li>https://github.com/0xADE1A1DE/Mastik</li>
-        </ul>
-    </div>
-    <br>
-    <div>
-        <b>Exam</b>
-        <p>
-            You should have finished the reference implementation of Gimli during the course. Should you need help, the solutions to this and the vectorized version are hidden in this webpage. Contact me if you cannot find them.
-        </p>
-        <p>
-            <a href="jasmin-tutorial-solutions.zip" style="color:black;">;)</a>
-        </p>
+        <h1>Programming Languages for Cybersecurity at RIO (2025-03-10)</h1>
+        <div>
+            <p>
+                The course is offered by Gilles Barthe and Santiago Arranz Olmos.
+            </p>
+            <p>
+                In this course we will show how to approach some security problems in a rigorous and principled way, using programming language theory. Some of the problems we will tackle are: reasoning about interaction with polynomial adversaries, relating highly optimized implementations with their corresponding specifications, and analyzing secret and public data flow of a program.
+            </p>
+            <p>
+                Our case study will be Jasmin, a language designed to implement high assurance high speed cryptography. Jasmin provides a detailed control of the assembly generated by the compiler, allowing for maximal optimization of cryptographic routines. The compiler is verified in Coq, guaranteeing that a Jasmin program and its compilation have equivalent behaviors.
+            </p>
+            <p>
+                From a Jasmin program, one may extract a model for the EasyCrypt proof assistant, which may be used to prove program properties such as cryptographic security. Additionally, Jasmin provides a safety checker to detect common mistakes such as out-of-bounds accesses and arithmetic errors.
+            </p>
+            <p>
+                Finally, we will show a type system that allows to compute the public and private information flow of a program, and how such information can be used to guarantee that a program does not reveal secret information, even in the presence of side channels and speculative execution.
+            </p>
+        </div>
+        <h2>Jasmin tutorial</h2>
+        <div>
+            <p>
+                The tutorial is available <a href="jasmin-tutorial.zip">here</a>. Please follow the README.md to install everything and have it ready for the course. Contact me at santiago [dot] arranz-olmos [at] mpi-sp [dot] org if you are having trouble with it.
+            </p>
+            <p>UPDATE 2025-03-15: I added many comments and small fixes in the tutorial.</p>
+        </div>
+        <h2>Classes</h2>
+        <div>
+            <b>Monday 10th: Introduction to Formosa, Hoare Logic, Jasmin</b>
+            <p>
+                Formosa, EasyCrypt, and Jasmin; review of Hoare logic
+            </p>
+            <p>Referenced material:</p>
+            <ul>
+                <li>
+                    Shai Halevi. A plausible approach to computer-aided cryptographic proofs. <a href="https://eprint.iacr.org/2005/181">https://eprint.iacr.org/2005/181</a>.
+                </li>
+                <li>
+                    Johannes Wikner, Daniël Trujillo, and Kaveh Razavi. 2023. Phantom: Exploiting Decoder-detectable Mispredictions. In 56th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO ’23), October 28-November 1, 2023, Toronto, ON, Canada. ACM, New York, NY, USA, § 13 pages. <a href="https://doi.org/10.1145/3613424.3614275">https://doi.org/10.1145/3613424.3614275</a>.
+                </li>
+                <li>
+                    Gilles Barthe, Marcel Böhme, Sunjay Cauligi, Chitchanok Chuengsatiansup, Daniel Genkin, Marco Guarnieri, David Mateos Romero, Peter Schwabe, David Wu, and Yuval Yarom. 2024. Testing Side-channel Security of Cryptographic Implementations against Future Microarchitectures. In Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security (CCS '24). Association for Computing Machinery, New York, NY, USA, 1076–1090. <a href="https://doi.org/10.1145/3658644.3670319">https://doi.org/10.1145/3658644.3670319</a>.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <b>Tuesday 11th: Relational Hoare Logic, EasyCrypt, Jasmin tutorial</b>
+            <p>
+                Relational Hoare Logic; relational properties; example HL proof in EC; Jasmin tutorial
+            </p>
+            <p>Referenced material:</p>
+            <ul>
+                <li>
+                    G. Barthe, P. R. D'Argenio, and T. Rezk, "Secure information flow by self-composition," Mathematical Structures in Computer Science, vol. 21, no. 6, pp. 1207–1252, 2011. <a href="https://doi.org/10.1017/S0960129511000193">doi:10.1017/S0960129511000193</a>.
+                </li>
+                <li>
+                    N Benton. Semantics of Program Analyses and Transformations. Lecture notes for the PAT Summer School. June 2005. <a href="https://nickbenton.name/patrevised.pdf">https://nickbenton.name/patrevised.pdf</a>.
+                </li>
+                <li>
+                    An introduction to relational program verification:
+                    <a href="https://software.imdea.org/~gbarthe/__introrelver.pdf">https://software.imdea.org/~gbarthe/__introrelver.pdf</a>.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <b>Wednesday 12th: Operational Semantics, Constant-Time</b>
+            <p>
+                Operational semantics; semantics with observations; constant-time
+            </p>
+            <p>Referenced material:</p>
+            <ul>
+                <li>
+                    The Formal Semantics of Programming Languages by Glynn Winskel.
+                    <a href="https://doi.org/10.7551/mitpress/3054.001.0001">https://doi.org/10.7551/mitpress/3054.001.0001</a>.
+                </li>
+                <li>
+                    Software Foundations by Benjamin Pierce.
+                    <a href="https://softwarefoundations.cis.upenn.edu/lf-current/index.html">https://softwarefoundations.cis.upenn.edu/lf-current/index.html</a>.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <b>Thursday 13th: Compiler preservation of semantics</b>
+            <p>
+                Safety properties; functional correctness; forward and backward simulations; CT simulations; simulations with transformers
+            </p>
+            <p>Referenced material:</p>
+            <ul>
+                <li>CompCert: <a href="https://compcert.org/">compcert.org</a></li>
+                <li>CakeML: <a href="https://cakeml.org/">cakeml.org</a></li>
+                <li>
+                    Leroy, X. A Formally Verified Compiler Back-end. J Autom Reasoning 43, 363–446 (2009). <a href="https://doi.org/10.1007/s10817-009-9155-4">https://doi.org/10.1007/s10817-009-9155-4</a>.
+                </li>
+                <li>
+                    G. Barthe, B. Grégoire and V. Laporte, "Secure Compilation of Side-Channel Countermeasures: The Case of Cryptographic “Constant-Time”," 2018 IEEE 31st Computer Security Foundations Symposium (CSF), Oxford, UK, 2018, pp. 328-343, <a href="https://doi.org/10.1109/CSF.2018.00031">doi:10.1109/CSF.2018.00031</a>.
+                </li>
+                <li>
+                    Santiago Arranz Olmos, Gilles Barthe, Lionel Blatter, Benjamin Grégoire, and Vincent Laporte. 2025. Preservation of Speculative Constant-Time by Compilation. Proc. ACM Program. Lang. 9, POPL, Article 44 (January 2025), 33 pages. <a href="https://doi.org/10.1145/3704880">https://doi.org/10.1145/3704880</a>.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <b>Extra resources</b>
+            <p>Side-channel attacks:</p>
+            <ul>
+                <li>
+                    Yuval Yarom and Katrina Falkner. 2014. FLUSH+RELOAD: a high resolution, low noise, L3 cache side-channel attack. In Proceedings of the 23rd USENIX conference on Security Symposium (SEC'14). USENIX Association, USA, 719–732. <a href="https://eprint.iacr.org/2013/448">eprint.iacr.org/2013/448</a>.
+                </li>
+                <li>
+                    Dag Arne Osvik, Adi Shamir, and Eran Tromer. 2006. Cache attacks and countermeasures: the case of AES. In Proceedings of the 2006 The Cryptographers' Track at the RSA conference on Topics in Cryptology (CT-RSA'06). Springer-Verlag, Berlin, Heidelberg, 1–20. <a href="https://doi.org/10.1007/11605805_1">doi.org/10.1007/11605805_1</a>.
+                </li>
+                <li>https://github.com/0xADE1A1DE/Mastik</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <b>Exam</b>
+            <p>
+                You should have finished the reference implementation of Gimli during the course. Should you need help, the solutions to this and the vectorized version are hidden in this webpage. Contact me if you cannot find them.
+            </p>
+            <p>
+                <a href="jasmin-tutorial-solutions.zip" style="color:black;">;)</a>
+            </p>
+        </div>
     </div>
 </body>
 
 </html>
-

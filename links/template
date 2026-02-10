@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <title>Redirecting to https://sarranz.github.io/</title>
+        <meta http-equiv="refresh" content="4; url=https://sarranz.github.io/"/>
+    </head>
+    <body>
+        <div>
+            <p>
+                If you are not redirected automatically in 4 seconds,
+                <a href="https://sarranz.github.io/">click here</a>.
+            </p>
+        </div>
+    </body>
+</html>

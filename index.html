@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="EN">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal academic website of Santiago Arranz Olmos, PhD student at MPI-SP working on programming language theory and its application to security.">
+        <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
         <title>Santiago Arranz Olmos</title>
         <style>
          body {
@@ -23,28 +26,37 @@
              border-bottom: 0;
          }
 
+         td {
+             vertical-align: top;
+             padding-right: 20px;
+         }
+
          #page-wrap {
              width: 80%;
              margin-top: 5%;
              margin-right: auto;
              margin-left: auto;
-             margin-bottom: auto;
          }
 
          #profile-pic {
              float: left;
          }
+
+         table p {
+             margin-top: 0;
+         }
+
+         .activity-name {
+         }
         </style>
     </head>
-
     <body>
         <div id="page-wrap">
             <div id="profile-pic">
-                <img
-                    src="img/profile.jpg"
-                    alt="Profile picture"
-                    style="width:250px;height:250px;"
-                >
+                <img src="img/profile.jpg"
+                     alt="Profile picture"
+                     style="width:250px;
+                            height:250px">
             </div>
             <div style="margin-left: 300px;">
                 <div id="information">
@@ -62,30 +74,202 @@
                 </div>
                 <div id="introduction">
                     <p>
-                        I'm a PhD student at
-                        <a href="https://www.mpi-sp.org/">MPI-SP</a> with
-                        <a href="https://gbarthe.github.io/">Gilles Barthe</a>.
+                        I'm a PhD student of
+                        <a href="https://gbarthe.github.io/">Gilles Barthe</a>
+                        at <a href="https://www.mpi-sp.org/">MPI-SP</a>.
                     </p>
                     <p>
-                        I'm interested in programming languages theory and its
+                        I'm interested in programming language theory and its
                         application to security.
                     </p>
                     <p>
-                        I did my Master's at
-                        <a href="https://www.unc.edu.ar/">Universidad Nacional
-                        de Córdoba (UNC)</a>.
-                        You can download my thesis
-                        <a href="files/ms-thesis.pdf">here</a> (it's in
-                        Spanish).
+                        I did my Master's at <a href="https://www.famaf.unc.edu.ar/">FaMAF</a> (<a href="https://www.unc.edu.ar/">UNC</a>), advised by Miguel Pagano.
+                        The thesis is
+                        "<a href="http://hdl.handle.net/11086/546410">Soporte para ARM en un compilador verificado</a>"
+                        (<a href="files/ms-thesis.pdf">local copy</a>).
                     </p>
                 </div>
             </div>
+            <div style="clear: both; margin-top: 40px;">
+                <h2>Advising Students</h2>
+                <table>
+                    <tr>
+                        <td>2025</td>
+                        <td>Mar 31st</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Martín Rodríguez</span> (Licenciatura en Ciencias de la Computación, like a Master's degree)
+                                <br>
+                                Co-advised with Miguel Pagano at FaMAF.
+                                <br>
+                                "<a href="http://hdl.handle.net/11086/555584">Detectar y explotar vulnerabilidades web con grandes modelos de lenguajes</a>" (<a href="files/2025-martin-rodriguez.pdf">local copy</a>).
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div>
-                <h3>Subpages:</h3>
+                <h2>Reviewing</h2>
+                <table>
+                    <tr>
+                        <td>2026</td>
+                        <td>Jan 11th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Reviewed for <a href="https://popl26.sigplan.org/home/prisc-2026">Principles of Secure Compilation (PriSC)</a></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Other Activities</h2>
+                <table>
+                    <tr>
+                        <td rowspan="2">2026</td>
+                        <td>Jun 8th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Talk at <a href="https://gdr-secu-jn2026.sciencesconf.org/">GDR Sécurité Informatique</a></span>
+                                <br>
+                                Presented "<a href="https://gdr-secu-jn2026.sciencesconf.org/745444">Formal Verification of Assembly-Level Side-Channel Security in Crypto Code</a>."
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mar 9th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Talk at <a href="https://rwc.iacr.org/2026/">Real World Crypto (RWC)</a> (with Ignacio Cuevas)</span>
+                                <br>
+                                Presented "<a href="https://youtu.be/0Gdbf9aYrkE?si=UyWIc_mvC1_5yoiI">End-to-End Formally Verified High-Assurance High-Speed Crypto Software</a>."
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="7">2025</td>
+                        <td>Oct 12th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Jasmin tutorial at <a href="https://hase-workshop.org/">High-Assurance Systems Engineering (HASE)</a></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Apr 3rd</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Conference talk at <a href="https://www.asplos-conference.org/asplos2025/index.html">Architectural Support for Programming Languages and Operating Systems (ASPLOS)</a></span>
+                                <br>
+                                Presented "<a href="https://doi.org/10.1145/3676641.3716015">Protecting Cryptographic Code Against Spectre-RSB</a>."
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mar 13th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Course at the <a href="https://www.exa.unrc.edu.ar/el-lunes-comienza-la-30a-edicion-de-la-escuela-de-verano-de-ciencias-informaticas-rio-2025/">RIO</a> summer school (with Gilles Barthe)</span>
+                                <br>
+                                One-week course "<a href="https://sarranz.github.io/pages/2025-03-10-rio">Programming Languages for Cybersecurity</a>."
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mar 7th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Lectures at <a href="https://www.famaf.unc.edu.ar/">FaMAF</a></span>
+                                <br>
+                                Two-week course "<a href="https://sarranz.github.io/pages/2025-02-24-funcs">Foundations of Cybersecurity</a>" for Bachelor's and Master's students.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Feb 19th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Talk and Jasmin tutorial at <a href="https://www.fing.edu.uy/">Fing</a> (<a href="https://udelar.edu.uy/">Udelar</a>)</span>
+                                <br>
+                                See <a href="https://sarranz.github.io/pages/2025-02-19-fing">/pages/2025-02-19-fing</a>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jan 20th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Conference talk at <a href="https://popl25.sigplan.org/">Principles of Programming Languages (POPL)</a></span>
+                                <br>
+                                Presented "<a href="https://doi.org/10.1145/3704880">Preservation of Speculative Constant-Time by Compilation</a>" (<a href="https://youtu.be/Y_WuJ5-ciLQ?si=FwwN1WQ5Yb4AEEyI">recording</a>).
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jan 20th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Talk at <a href="https://popl25.sigplan.org/home/prisc-2025">Principles of Secure Compilation (PriSC)</a></span>
+                                <br>
+                                Presented "<a href="https://www.youtube.com/watch?v=eWhpdP-pQp0">Preservation of Speculative Constant-Time by Compilation</a>."
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">2024</td>
+                        <td>Sep 7th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Conference talk at <a href="https://ches.iacr.org/2024/">Cryptographic Hardware and Embedded Systems (CHES)</a></span>
+                                <br>
+                                Presented "<a href="https://tches.iacr.org/index.php/TCHES/article/view/11256">High-assurance zeroization</a>" (<a href="https://youtu.be/h1Kd1o3BmZg?si=gQHPBo2nhVAM6awr">recording</a>).
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sep 4th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Jasmin tutorial at <a href="https://ches.iacr.org/2024/">Cryptographic Hardware and Embedded Systems (CHES)</a></span>
+                                <br>
+                                <a href="https://ches.iacr.org/2024/tutorials.php#Tutorial1">Tutorial page</a>.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mar 22nd</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Jasmin tutorial at <a href="https://www.hacs-workshop.org/">High-Assurance Crypto Software (HACS)</a></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Mar 31st</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Jasmin tutorial at <a href="https://www.hacs-workshop.org/">High-Assurance Crypto Software (HACS)</a></span>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Jan 12th</td>
+                        <td>
+                            <p>
+                                <span class="activity-name">Jasmin tutorial at <a href="https://www.hacs-workshop.org/">High-Assurance Crypto Software (HACS)</a></span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Subpages</h2>
                 <ul>
-                    <li>RIO summer school: <a href="https://sarranz.github.io/pages/rio-2025-03-10">/pages/rio-2025-03-10</a></li>
-                    <li>Foundations of Cybersecurity at FaMAF: <a href="https://sarranz.github.io/pages/funcs-2025-02-24">/pages/funcs-2025-02-24</a></li>
-                    <li>Jasmin tutorial at FING: <a href="https://sarranz.github.io/pages/fing-2025-02-19">/pages/fing-2025-02-19</a></li>
+                    <li>RIO summer school: <a href="https://sarranz.github.io/pages/2025-03-10-rio">/pages/2025-03-10-rio</a></li>
+                    <li>Foundations of Cybersecurity at FaMAF: <a href="https://sarranz.github.io/pages/2025-02-24-funcs">/pages/2025-02-24-funcs</a></li>
+                    <li>Jasmin tutorial at Fing: <a href="https://sarranz.github.io/pages/2025-02-19-fing">/pages/2025-02-19-fing</a></li>
                 </ul>
             </div>
         </div>
